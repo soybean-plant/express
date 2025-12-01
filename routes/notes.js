@@ -15,7 +15,7 @@ const notes = database.collection('notes');
 const query = { id: 2 };
 const note = await notes.findOne(query);
 
-res.json(note.title);
+res.json(note);
 })
 
 module.exports = router;
